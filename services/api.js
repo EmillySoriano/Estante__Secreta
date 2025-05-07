@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-const API_KEY = 'AIzaSyAlNJlrgozlHTW0N6KRSiIvp35AuE4gvKw';
 const BASE_URL = 'https://www.googleapis.com/books/v1/volumes';
 
 export const buscarLivros = async (query) => {
