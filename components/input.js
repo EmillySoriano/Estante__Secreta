@@ -1,13 +1,16 @@
 import React from 'react';
 import { TextInput, StyleSheet } from 'react-native';
 
-const Input = ({ placeholder }) => (
-  <TextInput
-    placeholder={placeholder}
-    placeholderTextColor="#A9A9A9"
-    style={styles.input}
-  />
-);
+const Input = ({ placeholder, value, onChangeText }) => {
+  return (
+    <TextInput
+      style={styles.input}
+      placeholder={placeholder}
+      value={value}
+      onChangeText={onChangeText}
+    />
+  );
+};
 
 const styles = StyleSheet.create({
   input: {
