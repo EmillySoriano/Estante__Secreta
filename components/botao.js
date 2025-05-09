@@ -1,25 +1,27 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TextInput, StyleSheet } from 'react-native';
 
-const Botao = ({ onPress, estilo, texto }) => (
-  <TouchableOpacity style={[styles.botao, estilo]} onPress={onPress}>
-    <Text style={styles.textoBotao}>{texto}</Text>
-  </TouchableOpacity>
-);
+const Input = ({ placeholder, value, onChangeText }) => {
+  return (
+    <TextInput
+      style={styles.input}
+      placeholder={placeholder}
+      value={value}
+      onChangeText={onChangeText}
+    />
+  );
+};
 
 const styles = StyleSheet.create({
-  botao: {
-    backgroundColor: '#8B61C2',
-    borderRadius: 90,
-    padding: 5,
+  input: {
+    width: '70%',
+    borderWidth: 1,
     marginBottom: 20,
-  },
-  textoBotao: {
-    color: 'white',
-    fontSize: 15,
-    fontWeight: 'bold',
-    padding: 5,
+    height: 40,
+    borderRadius: 50,
+    textAlign: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
   },
 });
 
-export default Botao;
+export default Input;
