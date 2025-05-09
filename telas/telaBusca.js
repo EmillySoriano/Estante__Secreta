@@ -62,7 +62,7 @@ const TelaBusca = () => {
               <TouchableOpacity
                 key={book.id}
                 style={styles.card}
-                onPress={() => navigation.navigate('TelaDetalhes', { book })}
+                onPress={() => navigation.navigate('Resultados', { book })}
               >
                 <Card style={styles.cardInner}>
                   {book.volumeInfo?.imageLinks?.thumbnail ? (
