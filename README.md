@@ -34,6 +34,16 @@ Este projeto é uma aplicação mobile desenvolvida com **React Native** que per
 
 Você pode visualizar o protótipo da aplicação no [Canva](https://www.canva.com/design/DAGk5fie7tM/9Vi0e6Pwx59lGyRsJWDt7g/view?utm_content=DAGk5fie7tM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha32ba82ba3).
 
+## 🔑 Configuração da Chave da API
+
+Este projeto requer uma chave da API armazenada em um arquivo `config.js`, que **não está incluído no repositório** por motivos de segurança.
+
+Para configurar:
+1. Crie um arquivo `config.js` na raiz do projeto.
+2. Adicione o seguinte conteúdo, substituindo `sua_chave_aqui` pela chave da API real:
+   ```javascript
+   export const API_KEY = 'sua_chave_aqui';
+
 ## 🚀 Como Executar
 
 ```bash
