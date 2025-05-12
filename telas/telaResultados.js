@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   bookImage: {
-    width: 100,
-    height: 150,
+    width: 200,
+    height: 250,
     alignSelf: 'center',
     marginBottom: 20,
   },
