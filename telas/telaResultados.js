@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, Image, StyleSheet, View, ScrollView } from 'react-native';
 import ImagemBackground from '../components/imagemFundo';
 import BotaoSalvar from '../components/botaoSalvar';
-import BotaoFavorito from '../components/botaoFav';
+import BotaoFavorito from '../components/botaoFav'
 
 const TelaResultados = ({ route, navigation }) => {
   const { book } = route.params;
@@ -41,7 +41,7 @@ const TelaResultados = ({ route, navigation }) => {
       </Text>
     </View>  
 
-    <BotaoSalvar></BotaoSalvar>
+     <BotaoSalvar book={book}/>
 
     </ScrollView>
     </ImagemBackground>
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   bookImage: {
-    width: 200,
-    height: 250,
+    width: 100,
+    height: 150,
     alignSelf: 'center',
     marginBottom: 20,
   },
