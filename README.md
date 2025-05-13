@@ -48,7 +48,7 @@ Para configurar:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/EmillySoriano/Estante__Secreta.git
 
 # Acesse a pasta do projeto
 cd nome-do-projeto
