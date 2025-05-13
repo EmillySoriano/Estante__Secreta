@@ -78,7 +78,7 @@ const TelaBusca = () => {
               </TouchableOpacity>
             ))}
           </View>
-        )}
+        )} 
       </ScrollView>
     </ImagemBackground>
   );
