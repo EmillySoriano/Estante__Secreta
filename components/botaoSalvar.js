@@ -1,13 +1,32 @@
+import React, { useState, useEffect } from 'react';
 import { Image, TouchableOpacity, View } from 'react-native';
-import { useState } from 'react';
+import { saveFavoriteBook, removeFavoriteBook, getFavoriteBooks } from '../services/favoritos';
 
-const BotaoSalvar = () => {
+const BotaoSalvar = ({ book }) => {
   const imagemNaoSalva = require('../assets/coracaonsalvo.png');
   const imagemSalva = require('../assets/coracaosalvo.png');
   const [getImagem, setImagem] = useState(imagemNaoSalva);
 
-  const nsalvo_salvo = () => {
-    setImagem(getImagem === imagemNaoSalva ? imagemSalva : imagemNaoSalva);
+  useEffect(() => {
+    const checkFavorite = async () => {
+      const favorites = await getFavoriteBooks();
+      const isFavorite = favorites.some((item) => item.id === book.id);
+      setImagem(isFavorite ? imagemSalva : imagemNaoSalva);
+    };
+    checkFavorite();
+  }, [book]);
+
+  const nsalvo_salvo = async () => {
+    const favorites = await getFavoriteBooks();
+    const isFavorite = favorites.some((item) => item.id === book.id);
+
+    if (isFavorite) {
+      await removeFavoriteBook(book.id);
+      setImagem(imagemNaoSalva);
+    } else {
+      await saveFavoriteBook(book);
+      setImagem(imagemSalva);
+    }
   };
 
   return (
