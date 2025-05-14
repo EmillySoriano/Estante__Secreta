@@ -33,21 +33,13 @@ O Estante Secreta é um aplicativo para amantes de livros, permitindo buscar tí
 estante__secreta/
 │
 ├── assets/           # Imagens e recursos visuais
-│
 ├── components/       # Componentes reutilizáveis
-│
 ├── services/         # Integrações com APIs e banco para favoritos
-│
 ├── telas/            # Telas de home, busca, resultados e favoritos
-│
 ├── App.js            # Arquivo principal do app
-│
 ├── app.json          # Configurações do projeto Expo
-│
 ├── config.js         # Chave da API (não incluído no repositório)
-│
 ├── package.json      # Dependências do projeto
-│
 └── README.md         # Documentação do projeto
 ```
 
