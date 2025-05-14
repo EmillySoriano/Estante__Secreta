@@ -30,7 +30,7 @@ O Estante Secreta é um aplicativo para amantes de livros, permitindo buscar tí
    ## 📂 Estrutura de Pastas
 
 ```bash
-estante-secreta/
+estante__secreta/
 │
 ├── assets/           # Imagens e recursos visuais
 │
