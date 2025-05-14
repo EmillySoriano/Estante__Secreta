@@ -1,6 +1,10 @@
 # 📚 *Estante Secreta* - *API do Google Books*
 
-Este projeto é uma aplicação mobile desenvolvida com **React Native** que permite pesquisar livros utilizando a **API do Google Books**, visualizar seus detalhes e manter uma lista de livros favoritos.
+Este projeto é uma aplicação mobile desenvolvida com React Native que permite pesquisar livros utilizando a API do Google Books, visualizar detalhes e manter uma lista de livros favoritos.
+
+## 🎯 Objetivo do App
+
+O Estante Secreta é um aplicativo para amantes de livros, permitindo buscar títulos via Google Books API e salvar favoritos, criando uma biblioteca particular personalizada.
 
 ## ⚙️ Funcionalidades
 
@@ -22,6 +26,30 @@ Este projeto é uma aplicação mobile desenvolvida com **React Native** que per
 
 4. **Tela de Favoritos**  
    Lista de livros que o usuário marcou como favoritos, acessível de qualquer lugar.
+
+   ## 📂 Estrutura de Pastas
+
+```bash
+estante-secreta/
+│
+├── assets/           # Imagens e recursos visuais
+│
+├── components/       # Componentes reutilizáveis
+│
+├── services/         # Integrações com APIs e banco para favoritos
+│
+├── telas/            # Telas de home, busca, resultados e favoritos
+│
+├── App.js            # Arquivo principal do app
+│
+├── app.json          # Configurações do projeto Expo
+│
+├── config.js         # Chave da API (não incluído no repositório)
+│
+├── package.json      # Dependências do projeto
+│
+└── README.md         # Documentação do projeto
+```
 
 ## 🔧 Tecnologias
 
