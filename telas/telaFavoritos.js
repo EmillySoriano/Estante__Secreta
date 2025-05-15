@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Image, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import ImagemBackground from '../components/imagemFundo';
 import { getFavoriteBooks } from '../services/favoritos';
+import BotaoVoltar from '../components/botaoVoltar';
 
 const TelaFavoritos = ({ navigation }) => {
   const [favorites, setFavorites] = useState([]);
@@ -38,6 +39,9 @@ const TelaFavoritos = ({ navigation }) => {
 
   return (
     <ImagemBackground>
+
+    <BotaoVoltar onPress={() => navigation.goBack()} />
+    
       <View style={styles.header}>
         <Image
           source={require('../assets/LogoES.png')}
