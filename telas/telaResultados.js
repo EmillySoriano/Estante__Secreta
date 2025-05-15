@@ -3,12 +3,15 @@ import { Text, Image, StyleSheet, View, ScrollView } from 'react-native';
 import ImagemBackground from '../components/imagemFundo';
 import BotaoSalvar from '../components/botaoSalvar';
 import BotaoFavorito from '../components/botaoFav'
+import BotaoVoltar from '../components/botaoVoltar';
 
 const TelaResultados = ({ route, navigation }) => {
   const { book } = route.params;
 
   return (
     <ImagemBackground>
+
+    <BotaoVoltar onPress={() => navigation.goBack()} />
 
     <View style={styles.header}>
         <Image
