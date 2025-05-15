@@ -6,6 +6,7 @@ import Input from '../components/input';
 import { Card } from 'react-native-paper';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { buscarLivros } from '../services/api';
+import BotaoVoltar from '../components/botaoVoltar';
 
 const TelaBusca = () => {
   const route = useRoute();
@@ -33,7 +34,10 @@ const TelaBusca = () => {
   }, [query]);
 
   return (
-    <ImagemBackground>
+    <ImagemBackground>  
+
+    <BotaoVoltar onPress={() => navigation.goBack()} />
+    
       <View style={styles.header}>
         <Image
           source={require('../assets/LogoES.png')}
