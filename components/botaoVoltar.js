@@ -3,7 +3,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 const BotaoVoltar = ({ onPress }) => (
  <TouchableOpacity onPress={onPress}>
-    <Text style={styles.backButton}>↩  Voltar</Text>
+    <Text style={styles.backButton}>Voltar</Text>
   </TouchableOpacity>
 );
 
